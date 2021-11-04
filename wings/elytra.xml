@@ -36,7 +36,6 @@
     <project path="frameworks/native" name="frameworks_native" remote="elytra" />
 
     <!-- Hardware -->
-    <project path="hardware/libhardware" name="hardware_libhardware" remote="elytra" />
     <project path="hardware/interfaces" name="hardware_interfaces" remote="elytra" />
     <project path="hardware/xiaomi" name="hardware_xiaomi" remote="elytra" />
     <project path="hardware/elytra/interfaces" name="hardware_elytra_interfaces" remote="elytra" />
