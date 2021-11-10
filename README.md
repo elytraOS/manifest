@@ -10,7 +10,7 @@ After you got all the needed commands for setting up your environment, set up th
 
 And then start syncing with our sources.
 
-    repo sync
+    repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags --current-branch
 
 And now, you are ready to start building. Remember to set up device tree, common tree (if any) *etc*.
 
