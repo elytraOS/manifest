@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="elytra"
+           revision="skylight"
+           fetch="https://github.com/elytraOS" />
+
+  <!-- Build -->
+  <project path="bionic" name="bionic" remote="elytra" />
+  <project path="build/make" name="build" remote="elytra">
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="build_soong" remote="elytra" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+    <!-- Framework -->
+    <project path="frameworks/av" name="frameworks_av" remote="elytra" />
+    <project path="frameworks/base" name="frameworks_base" remote="elytra" />
+
+    <!-- Hardware -->
+    <project path="hardware/libhardware" name="hardware_libhardware" remote="elytra" />
+    <project path="hardware/xiaomi" name="hardware_xiaomi" remote="elytra" />
+
+    <!-- Packages -->
+    <project path="packages/apps/Settings" name="packages_apps_Settings" remote="elytra" />
+
+    <!-- System -->
+    <project path="system/core" name="system_core" remote="elytra" />
+    <project path="system/sepolicy" name="system_sepolicy" remote="elytra" />
+
+    <!-- Sepolicy -->
+    <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="elytra" />
+    <project path="device/elytra/sepolicy" name="device_elytra_sepolicy" remote="elytra" />
+    <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="elytra" />
+    <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="elytra" />
+
+    <!-- vendor -->
+    <project path="vendor/elytra" name="vendor_elytra" remote="elytra" />
+    <project path="vendor/qcom/opensource/fm-commonsys" name="vendor_qcom_opensource_fm-commonsys" remote="elytra" />
+
+</manifest>
