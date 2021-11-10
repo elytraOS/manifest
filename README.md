@@ -6,7 +6,7 @@ First of all, you should have a decent knowledge about the [Source Control Tools
 
 After you got all the needed commands for setting up your environment, set up the sources.
 
-    repo init -u git://github.com/elytraOS/manifest.git --depth=1
+    repo init -u git://github.com/elytraOS/manifest.git -b skylight
 
 And then start syncing with our sources.
 
