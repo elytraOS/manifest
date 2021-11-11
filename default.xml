@@ -1106,5 +1106,5 @@
    <!-- elytraOS -->
   <include name="wings/remove.xml" />
   <include name="wings/elytra.xml" />
-  <include name="wings/lineage.xml" />
+  <include name="wings/extras.xml" />
 </manifest>
