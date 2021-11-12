@@ -109,6 +109,7 @@
   <!-- Hardware -->
   <remove-project name="platform/hardware/libhardware"/>
   <remove-project name="platform/hardware/interfaces" />
+  <remove-project name="platform/hardware/qcom/camera" />
 
   <!-- System -->
   <remove-project name="platform/system/bt" />
