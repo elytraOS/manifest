@@ -51,7 +51,6 @@
     <project path="packages/apps/SimpleDeviceConfig" name="packages_apps_SimpleDeviceConfig" remote="elytra" />
     <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="elytra" />
     <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="elytra" />
-    <project path="packages/modules/adb" name="packages_modules_adb" remote="elytra" />
     <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="elytra" />
     <project path="packages/modules/Permission" name="packages_modules_Permission" remote="elytra" />
     <project path="packages/modules/Wifi" name="packages_modules_Wifi" remote="elytra" />
