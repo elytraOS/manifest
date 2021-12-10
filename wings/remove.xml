@@ -118,4 +118,18 @@
   <remove-project name="platform/external/mksh" />
   <remove-project name="platform/external/sqlite" />
   <remove-project name="platform/external/tinycompress" />
+  <remove-project name="platform/external/arm-optimized-routines"/>
+  <remove-project name="platform/external/cpu_features" />
+  <remove-project name="platform/external/giflib" />
+  <remove-project name="platform/external/harfbuzz_ng" />
+  <remove-project name="platform/external/libjpeg-turbo" />
+  <remove-project name="platform/external/libpng" />
+  <remove-project name="platform/external/libvpx" />
+  <remove-project name="platform/external/libyuv" />
+  <remove-project name="platform/external/lz4" />
+  <remove-project name="platform/external/vixl" />
+  <remove-project name="platform/external/zlib" />
+  <remove-project name="platform/external/noto-fonts" />
+  <remove-project name="platform/external/roboto-fonts" />
+  <remove-project name="platform/external/google-fonts/cutive-mono" />
 </manifest>
