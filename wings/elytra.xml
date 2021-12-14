@@ -75,6 +75,7 @@
 
     <!-- vendor -->
     <project path="vendor/elytra" name="vendor_elytra" remote="elytra" />
+    <project path="vendor/support" name="vendor_support" remote="elytra" />
     <project path="vendor/qcom/opensource/fm-commonsys" name="vendor_qcom_opensource_fm-commonsys" remote="elytra" />
     <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" remote="elytra" />
     <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="elytra" />
