@@ -59,7 +59,6 @@
     <!-- System -->
     <project path="system/bt" name="system_bt" remote="elytra" />
     <project path="system/core" name="system_core" remote="elytra" />
-    <project path="system/logging" name="system_logging" remote="elytra" />
     <project path="system/memory/lmkd" name="system_memory_lmkd" remote="elytra" />
     <project path="system/sepolicy" name="system_sepolicy" remote="elytra" />
     <project path="system/security" name="system_security" remote="elytra" /> 
