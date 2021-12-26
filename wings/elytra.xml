@@ -43,6 +43,7 @@
     <project path="hardware/qcom-caf/wlan" name="hardware_qcom_wlan" remote="elytra" />
 
     <!-- Packages -->
+    <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="elytra" />
     <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="elytra" />
     <project path="packages/apps/Settings" name="packages_apps_Settings" remote="elytra" />
     <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="elytra" />
@@ -59,6 +60,7 @@
     <project path="packages/services/Telephony" name="packages_services_Telephony" remote="elytra" />
 
     <!-- System -->
+    <project path="system/bt" name="system_bt" remote="elytra" />
     <project path="system/core" name="system_core" remote="elytra" />
     <project path="system/logging" name="system_logging" remote="elytra" />
     <project path="system/memory/lmkd" name="system_memory_lmkd" remote="elytra" />
@@ -79,6 +81,11 @@
     <project path="vendor/qcom/opensource/fm-commonsys" name="vendor_qcom_opensource_fm-commonsys" remote="elytra" />
     <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" remote="elytra" />
     <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="elytra" />
+    <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="vendor_qcom_opensource_data-ipa-cfg-mgr" remote="elytra" />
+    <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="vendor_qcom_opensource_bluetooth-commonsys-intf" remote="elytra" />
+    <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="vendor_qcom_opensource_bluetooth_ext" remote="elytra" />
+    <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="vendor_qcom_opensource_packages_apps_Bluetooth" remote="elytra" />
+    <project path="vendor/qcom/opensource/commonsys/system/bt" name="vendor_qcom_opensource_system_bt" remote="elytra" />
 
     <!-- External -->
     <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="elytra" />
