@@ -82,7 +82,6 @@
 
     <!-- External -->
     <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="elytra" />
-    <project path="external/cpu_features" name="external_cpu_features" remote="elytra" />
     <project path="external/e2fsprogs" name="external_e2fsprogs" remote="elytra" />
     <project path="external/gptfdisk" name="external_gptfdisk" remote="elytra" />
     <project path="external/mksh" name="external_mksh" remote="elytra" />
@@ -94,7 +93,6 @@
     <project name="external_google-fonts_cutive-mono" path="external/google-fonts/cutive-mono" remote="elytra" />
     <project name="external_colorkt" path="external/colorkt" remote="elytra" />
     <project path="external/giflib" name="external_giflib" remote="elytra" />
-    <project path="external/harfbuzz_ng" name="external_harfbuzz_ng" remote="elytra" />
     <project path="external/libjpeg-turbo" name="external_libjpeg-turbo" remote="elytra" />
     <project path="external/libpng" name="external_libpng" remote="elytra" />
     <project path="external/libvpx" name="external_libvpx" remote="elytra" />
