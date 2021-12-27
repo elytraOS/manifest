@@ -107,4 +107,9 @@
     <project path="external/lz4" name="external_lz4" remote="elytra" />
     <project path="external/vixl" name="external_vixl" remote="elytra" />
     <project path="external/zlib-ng" name="external_zlib-ng" remote="elytra" />
+
+    <!-- Hals -->
+    <project path="hardware/qcom-caf/sm8350/display" name="hardware_qcom-caf_sm8350_display" revision="skylight" remote="elytra" />
+    <project path="hardware/qcom-caf/sm8350/media" name="hardware_qcom-caf_sm8350_media" revision="skylight" remote="elytra" />
+    <project path="hardware/qcom-caf/sm8350/audio" name="hardware_qcom-caf_sm8350_audio" revision="skylight" remote="elytra" />
 </manifest>
