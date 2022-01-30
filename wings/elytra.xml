@@ -85,11 +85,6 @@
     <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="elytra" />
     <project path="external/tinycompress" name="external_tinycompress" remote="elytra" />
     <project path="external/sqlite" name="external_sqlite" remote="elytra" />
-    <project name="external_themelib" path="external/themelib" remote="elytra" />
-    <project name="external_noto-fonts" path="external/noto-fonts" remote="elytra" />
-    <project name="external_roboto-fonts" path="external/roboto-fonts" remote="elytra" />
-    <project name="external_google-fonts_cutive-mono" path="external/google-fonts/cutive-mono" remote="elytra" />
-    <project name="external_colorkt" path="external/colorkt" remote="elytra" />
     <project path="external/giflib" name="external_giflib" remote="elytra" />
     <project path="external/libjpeg-turbo" name="external_libjpeg-turbo" remote="elytra" />
     <project path="external/libpng" name="external_libpng" remote="elytra" />
@@ -97,7 +92,6 @@
     <project path="external/libyuv" name="external_libyuv" remote="elytra" />
     <project path="external/lz4" name="external_lz4" remote="elytra" />
     <project path="external/vixl" name="external_vixl" remote="elytra" />
-    <project path="external/zlib-ng" name="external_zlib-ng" remote="elytra" />
 
     <!-- Hals -->
     <project path="hardware/qcom-caf/sm8350/display" name="hardware_qcom-caf_sm8350_display" revision="skylight" remote="elytra" />

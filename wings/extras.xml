@@ -9,6 +9,10 @@
            revision="12"
            fetch="https://gitlab.com/Project-Awaken/" />
 
+  <remote  name="proton"
+           fetch="https://github.com/ProtonAOSP"
+           revision="sc" />
+
   <!-- External -->
   <project path="external/ant-wireless/ant_client" name="LineageOS/android_external_ant-wireless_ant_client" remote="LineageOS" />
   <project path="external/ant-wireless/ant_native" name="LineageOS/android_external_ant-wireless_ant_native" remote="LineageOS" />
@@ -166,4 +170,11 @@
   <project path="vendor/qcom/opensource/vibrator" name="LineageOS/android_vendor_qcom_opensource_vibrator" groups="qcom,pdk-qcom" remote="LineageOS" />
   <project path="vendor/qcom/opensource/wfd-commonsys" name="LineageOS/android_vendor_qcom_opensource_wfd-commonsys" groups="qcom,pdk" remote="LineageOS" />
 
+  <!-- ProtonAosp -->
+  <project name="android_external_noto-fonts" path="external/noto-fonts" remote="proton" />
+  <project name="android_external_roboto-fonts" path="external/roboto-fonts" remote="proton" />
+  <project name="android_external_google-fonts_cutive-mono" path="external/google-fonts/cutive-mono" remote="proton" />
+  <project name="android_external_colorkt" path="external/colorkt" remote="proton" />
+  <project name="android_external_themelib" path="external/themelib" remote="proton" />
+  <project name="android_external_zlib-ng" path="external/zlib-ng" remote="proton" />
 </manifest>
