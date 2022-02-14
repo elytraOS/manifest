@@ -89,6 +89,7 @@
     <!-- External -->
     <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="elytra" />
     <project path="external/tinycompress" name="external_tinycompress" remote="elytra" />
+    <project path="external/scudo" name="external_scudo" remote="elytra" />
     <project path="external/sqlite" name="external_sqlite" remote="elytra" />
     <project path="external/giflib" name="external_giflib" remote="elytra" />
     <project path="external/libjpeg-turbo" name="external_libjpeg-turbo" remote="elytra" />
