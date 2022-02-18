@@ -87,6 +87,7 @@
     <project path="vendor/qcom/opensource/commonsys/system/bt" name="vendor_qcom_opensource_system_bt" remote="elytra" />
 
     <!-- External -->
+    <project path="external/AndroidSystemBlur" name="AndroidSystemBlur" remote="elytra" />
     <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="elytra" />
     <project path="external/tinycompress" name="external_tinycompress" remote="elytra" />
     <project path="external/scudo" name="external_scudo" remote="elytra" />
