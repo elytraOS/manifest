@@ -22,7 +22,7 @@
 
   <remote  name="proton"
            fetch="https://github.com/ProtonAOSP"
-           revision="sc-v2" />
+           revision="sc-qpr3" />
 
   <!-- Bootable -->
   <project path="bootable/recovery" name="LineageOS/android_bootable_recovery" groups="pdk" remote="LineageOS" />
