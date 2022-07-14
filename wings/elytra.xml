@@ -87,6 +87,7 @@
     <!-- External -->
     <project path="external/AndroidSystemBlur" name="AndroidSystemBlur" remote="elytra" />
     <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="elytra" />
+    <project path="external/eigen" name="external_eigen" remote="elytra" />
     <project path="external/freetype" name="external_freetype" remote="elytra" />
     <project path="external/scudo" name="external_scudo" remote="elytra" />
     <project path="external/sqlite" name="external_sqlite" remote="elytra" />
