@@ -141,7 +141,6 @@
   <project path="packages/apps/Recorder" name="LineageOS/android_packages_apps_Recorder" remote="LineageOS" revision="lineage-19.1" />
   <project path="packages/apps/Stk" name="LineageOS/android_packages_apps_Stk" groups="apps_stk,pdk-fs" remote="LineageOS" revision="lineage-19.1" />
   <project path="packages/inputmethods/LatinIME" name="LineageOS/android_packages_inputmethods_LatinIME" groups="pdk-fs" remote="LineageOS" revision="lineage-19.1" />
-  <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="LineageOS" revision="lineage-19.1" />
   <project path="packages/modules/common" name="LineageOS/android_packages_modules_common" groups="pdk-cw-fs,pdk-fs" remote="LineageOS" revision="lineage-19.1" />
 
   <!-- Prebuilts -->

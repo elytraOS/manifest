@@ -57,6 +57,7 @@
     <project path="packages/modules/Wifi" name="packages_modules_Wifi" remote="elytra" />
     <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="elytra" />
     <project path="packages/services/Telephony" name="packages_services_Telephony" remote="elytra" />
+    <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="elytra" />
 
     <!-- System -->
     <project path="system/bt" name="system_bt" remote="elytra" />
