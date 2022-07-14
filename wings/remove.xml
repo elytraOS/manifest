@@ -165,6 +165,7 @@
   <remove-project name="platform/external/libcxx" />
   <remove-project name="platform/external/eigen" />
   <remove-project name="platform/external/e2fsprogs" />
+  <remove-project name="platform/external/f2fs-tools" />
   <remove-project name="platform/external/freetype" />
   <remove-project name="platform/external/gptfdisk" />
   <remove-project name="platform/external/harfbuzz_ng"/>
