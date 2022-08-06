@@ -204,7 +204,7 @@
   <project path="external/seedvault" name="GrapheneOS/platform_external_seedvault" remote="github" revision="12.1" />
 
   <!-- Neutron Clang -->
-  <project path="prebuilts/clang/host/linux-x86/neutron-clang" name="dakkshesh07/neutron-clang" clone-depth="1" revision="Neutron-16" remote="gitlab" />
+  <project path="prebuilts/clang/host/linux-x86/neutron-clang" name="Rasenkai/neutron-clang" clone-depth="1" revision="master" remote="gitlab" />
 
   <!-- ProtonAosp -->
   <project name="android_packages_apps_GmsCompat" path="packages/apps/GmsCompat" remote="proton" />
