@@ -155,9 +155,10 @@
   <project path="prebuilts/tools-lineage" name="LineageOS/android_prebuilts_tools-lineage" clone-depth="1" remote="LineageOS" />
   <project path="prebuilts/clang/host/linux-x86" name="BenzoRom/prebuilts_clang_host_linux-x86" revision="android12L" remote="github"/>
   <project path="prebuilts/clang/host/linux-x86/clang-benzo" name="xanaxdroid/benzoClang-16.0" remote="bitbucket" revision="master"/>
-  <project path="prebuilts/clang-tools" name="xanaxdroid/prebuilts_clang-tools" remote="bitbucket" revision="android12L"/>
+  <project path="prebuilts/clang-tools" name="Rasenkai/prebuilts_clang-tools" remote="gitlab" revision="scorch"/>
   <project path="prebuilts/gas/linux-x86" name="platform/prebuilts/gas/linux-x86" revision="master" clone-depth="1"/>
   <project path="prebuilts/r8" name="BenzoRom/prebuilts_r8" revision="android12L" remote="github" />
+  <project path="prebuilts/go/linux-x86" name="BenzoROM/prebuilts_go_linux-x86" revision="android12L" remote="github" />
   <project path="prebuilts/rust" name="platform/prebuilts/rust" revision="c02cf63008969d093744d434576612ba1a9b83d3" clone-depth="1"/>
 
   <!-- System -->

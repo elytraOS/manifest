@@ -11,6 +11,7 @@
   <!-- Build -->
   <remove-project name="platform/bionic" />
   <remove-project name="platform/build" />                  
+  <remove-project name="platform/build/blueprint"/>
   <remove-project name="platform/build/soong" /> 
 
   <!-- Device -->
@@ -89,6 +90,7 @@
   <remove-project name="platform/prebuilts/clang/host/linux-x86"/>
   <remove-project name="platform/prebuilts/clang-tools"/>
   <remove-project name="platform/prebuilts/r8"/>
+  <remove-project name="platform/prebuilts/go/linux-x86"/>
   <remove-project name="platform/prebuilts/rust"/>
 
   <!-- Framework -->
@@ -144,6 +146,7 @@
 
   <!-- System -->
   <remove-project name="platform/system/bt" />
+  <remove-project name="platform/system/connectivity/wificond"/>
   <remove-project name="platform/system/core" />
   <remove-project name="platform/system/libartpalette" />
   <remove-project name="platform/system/libhidl" />

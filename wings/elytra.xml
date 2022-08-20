@@ -20,6 +20,7 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
+  <project path="build/blueprint" name="build_blueprint" remote="elytra" />
   <project path="build/soong" name="build_soong" remote="elytra" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
@@ -61,6 +62,7 @@
 
     <!-- System -->
     <project path="system/bt" name="system_bt" remote="elytra" />
+    <project path="system/connectivity/wificond" name="system_connectivity_wificond" remote="elytra" />
     <project path="system/core" name="system_core" remote="elytra" />
     <project path="system/extras" name="system_extras" remote="elytra" />
     <project path="system/libartpalette" name="system_libartpalette" remote="elytra" />
