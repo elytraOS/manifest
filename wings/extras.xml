@@ -117,9 +117,9 @@
   <project path="hardware/qcom-caf/sm8150/audio" name="hardware_qcom-caf_sm8150_audio" revision="skylight" remote="elytra" />
   <project path="hardware/qcom-caf/sm8150/display" name="hardware_qcom-caf_sm8150_display" revision="skylight" remote="elytra" />
   <project path="hardware/qcom-caf/sm8150/media" name="hardware_qcom-caf_sm8150_media" revision="skylight" remote="elytra" />
-  <project path="hardware/qcom-caf/sm8350/display" name="hardware_qcom-caf_sm8350_display" revision="skylight" remote="elytra" />
-  <project path="hardware/qcom-caf/sm8350/media" name="hardware_qcom-caf_sm8350_media" revision="skylight" remote="elytra" />
-  <project path="hardware/qcom-caf/sm8350/audio" name="hardware_qcom-caf_sm8350_audio" revision="skylight" remote="elytra" />
+  <project path="hardware/qcom-caf/sm8350/display" name="hardware_qcom-caf_sm8350_display" revision="scorch" remote="elytra" />
+  <project path="hardware/qcom-caf/sm8350/media" name="hardware_qcom-caf_sm8350_media" revision="scorch" remote="elytra" />
+  <project path="hardware/qcom-caf/sm8350/audio" name="hardware_qcom-caf_sm8350_audio" revision="scorch" remote="elytra" />
   <project path="hardware/qcom/sm7250/display" name="LineageOS/android_hardware_qcom_sm7250_display" groups="qcom_sm7250" remote="LineageOS" />
   <project path="hardware/qcom/sm7250/media" name="LineageOS/android_hardware_qcom_sm7250_media" groups="qcom_sm7250" remote="LineageOS" />
   <project path="hardware/qcom-caf/thermal" name="LineageOS/android_hardware_qcom_thermal" groups="qcom,lahaina" remote="LineageOS" />
