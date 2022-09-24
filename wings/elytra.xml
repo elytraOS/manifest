@@ -73,4 +73,7 @@
   <project path="vendor/elytra" name="vendor_elytra" remote="elytra" />
   <project path="vendor/gms" name="android_vendor_gms" remote="awaken-gitlab" clone-depth="1" />
 
+  <!-- External -->
+  <project path="external/AndroidSystemBlur" name="AndroidSystemBlur" remote="elytra" />
+
 </manifest>
