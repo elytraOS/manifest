@@ -41,14 +41,21 @@
   <!-- External -->
   <remove-project name="platform/external/android-nn-driver" />
   <remove-project name="platform/external/armnn" />
+  <remove-project name="platform/external/arm-optimized-routines"/>
   <remove-project name="platform/external/chromium-webview" />
+  <remove-project name="platform/external/ComputeLibrary" />
   <remove-project name="platform/external/e2fsprogs" />
   <remove-project name="platform/external/exfatprogs" />
+  <remove-project name="platform/external/f2fs-tools" />
   <remove-project name="platform/external/gptfdisk" />
   <remove-project name="platform/external/libcxx" />
+  <remove-project name="platform/external/libjpeg-turbo" />
+  <remove-project name="platform/external/lz4" />
   <remove-project name="platform/external/mksh" />
+  <remove-project name="platform/external/sqlite" />
   <remove-project name="platform/external/tinycompress" />
   <remove-project name="platform/external/wpa_supplicant_8" />
+  <remove-project name="platform/external/zstd" />
 
   <!-- Frameworks -->
   <remove-project name="platform/frameworks/av" />
