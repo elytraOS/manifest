@@ -78,8 +78,12 @@
   <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="elytra" />
   <project path="external/ComputeLibrary" name="external_ComputeLibrary" remote="elytra" />
   <project path="external/f2fs-tools" name="external_f2fs-tools" remote="elytra" />
+  <project path="external/giflib" name="external_giflib" remote="elytra" />
+  <project path="external/harfbuzz_ng" name="external_harfbuzz_ng" remote="elytra"/>
   <project path="external/libjpeg-turbo" name="external_libjpeg-turbo" remote="elytra" />
+  <project path="external/libpng" name="external_libpng" remote="elytra" />
   <project path="external/lz4" name="external_lz4" remote="elytra" />
+  <project path="external/scudo" name="external_scudo" remote="elytra" />
   <project path="external/sqlite" name="external_sqlite" remote="elytra" />
   <project path="external/zstd" name="external_zstd" remote="elytra" />
 </manifest>
