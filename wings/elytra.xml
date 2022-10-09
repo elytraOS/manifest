@@ -78,6 +78,7 @@
   <project path="external/AndroidSystemBlur" name="AndroidSystemBlur" remote="elytra" />
   <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="elytra" />
   <project path="external/ComputeLibrary" name="external_ComputeLibrary" remote="elytra" />
+  <project path="external/elfutils" name="external_elfutils" remote="elytra" />
   <project path="external/f2fs-tools" name="external_f2fs-tools" remote="elytra" />
   <project path="external/giflib" name="external_giflib" remote="elytra" />
   <project path="external/harfbuzz_ng" name="external_harfbuzz_ng" remote="elytra"/>
