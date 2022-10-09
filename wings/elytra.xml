@@ -86,5 +86,6 @@
   <project path="external/lz4" name="external_lz4" remote="elytra" />
   <project path="external/scudo" name="external_scudo" remote="elytra" />
   <project path="external/sqlite" name="external_sqlite" remote="elytra" />
+  <project name="external_zlib-ng" path="external/zlib-ng" remote="elytra" />
   <project path="external/zstd" name="external_zstd" remote="elytra" />
 </manifest>
