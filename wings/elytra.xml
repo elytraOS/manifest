@@ -69,6 +69,7 @@
   <!-- System -->
   <project path="system/core" name="system_core" groups="pdk" remote="elytra" />
   <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="elytra" />
+  <project path="system/memory/lmkd" name="system_memory_lmkd" remote="elytra" />
 
   <!-- Vendor -->
   <project path="vendor/elytra" name="vendor_elytra" remote="elytra" />
