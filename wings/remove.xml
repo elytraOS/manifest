@@ -44,9 +44,11 @@
   <remove-project name="platform/external/arm-optimized-routines"/>
   <remove-project name="platform/external/chromium-webview" />
   <remove-project name="platform/external/ComputeLibrary" />
+  <remove-project name="platform/external/cpu_features" />    
   <remove-project name="platform/external/e2fsprogs" />
   <remove-project name="platform/external/elfutils" />
   <remove-project name="platform/external/exfatprogs" />
+  <remove-project name="platform/external/fonttools" />  
   <remove-project name="platform/external/f2fs-tools" />
   <remove-project name="platform/external/giflib" />
   <remove-project name="platform/external/gptfdisk" />
@@ -58,7 +60,10 @@
   <remove-project name="platform/external/mksh" />
   <remove-project name="platform/external/scudo" />
   <remove-project name="platform/external/sqlite" />
+  <remove-project name="platform/external/swiftshader" />  
   <remove-project name="platform/external/tinycompress" />
+  <remove-project name="platform/external/webp" />
+  <remove-project name="platform/external/webrtc" />    
   <remove-project name="platform/external/wpa_supplicant_8" />
   <remove-project name="platform/external/zlib" />
   <remove-project name="platform/external/zstd" />
