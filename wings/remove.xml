@@ -43,6 +43,7 @@
   <remove-project name="platform/external/armnn" />
   <remove-project name="platform/external/arm-optimized-routines"/>
   <remove-project name="platform/external/chromium-webview" />
+  <remove-project name="platform/external/cldr" />
   <remove-project name="platform/external/ComputeLibrary" />
   <remove-project name="platform/external/cpu_features" />    
   <remove-project name="platform/external/e2fsprogs" />
