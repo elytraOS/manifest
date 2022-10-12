@@ -88,6 +88,7 @@
   <project path="external/libjpeg-turbo" name="external_libjpeg-turbo" remote="elytra" />
   <project path="external/libpng" name="external_libpng" remote="elytra" />
   <project path="external/lz4" name="external_lz4" remote="elytra" />
+  <project path="external/mimalloc" name="external_mimalloc" remote="elytra" />
   <project path="external/scudo" name="external_scudo" remote="elytra" />
   <project path="external/sqlite" name="external_sqlite" remote="elytra" />
   <project path="external/swiftshader" name="external_swiftshader" remote="elytra" />
