@@ -100,12 +100,27 @@ done
 echo -e "${blu}\nUpdating manifest..."
 if curl -Ls $MANIFEST_URL > $MANIFEST_XML; then
     $IS_QSSI || sed -i '3,7d' $MANIFEST_XML
-    git -C manifest commit -aq -m "manifest: Update to $TAG" &> /dev/null
-    echo -e "${blu}Manifest updated succesfully!"
-    echo manifest >> success
+    if git -C manifest commit -aq -m "manifest: Update to $TAG" &> /dev/null; then
+        echo -e "${blu}Manifest updated succesfully!"
+        echo manifest >> success
+    else
+        echo -e "${red}Manifest already up to date!"
+    fi
 else
     echo -e "${red}Manifest update failed!"
     echo manifest >> failed
+fi
+
+# update clo rev in vendor
+if $IS_QSSI; then
+    echo -e "\n${blu}Updating CLO revision in vendor/reloaded..."
+    sed -i "s|CLO_REVISION := .*|CLO_REVISION := $TAG|g" vendor/reloaded/config/branding.mk
+    if git -C vendor/reloaded commit -aq -m "config: Update CLO revision to $TAG" &> /dev/null; then
+        echo -e "${blu}CLO revision updated succesfully!"
+        echo vendor/reloaded >> success
+    else
+        echo -e "${red}CLO revision already up to date!"
+    fi
 fi
 
 if [ -s success ]; then
