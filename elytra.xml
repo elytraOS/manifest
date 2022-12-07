@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Build and Core -->
+  <remove-project name="platform/art" />
+  <project path="art" name="art" remote="elytra" />
+  <remove-project name="platform/bionic" />
+  <project path="bionic" name="bionic" remote="elytra" />
+  <remove-project name="platform/build_repo" />
+  <project path="build/make" name="build" remote="elytra" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <remove-project name="platform/build/soong" />
+  <project path="build/soong" name="build_soong" remote="elytra" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- Bootable -->
+  <remove-project name="platform/bootable/recovery" />
+  <project path="bootable/recovery" name="bootable_recovery" remote="elytra" />
+
+  <!-- CTS (AOSP) -->
+  <remove-project name="platform/cts" />
+  <project path="cts" name="platform/cts" remote="aosp" clone-depth="1" />
+
+  <!-- Device -->
+  <remove-project name="device/qcom/common" />
+  <project path="device/qcom/common" name="device_qcom_common" remote="elytra" >
+    <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
+  </project>
+  <remove-project name="device/qcom/qssi" />
+  <project path="device/qcom/qssi" name="device_qcom_qssi" remote="elytra" />
+  <remove-project name="device/qcom/sepolicy" />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="elytra" />
+  <remove-project name="device/qcom/sepolicy_vndr" />
+  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="elytra" />
+  <remove-project name="device/qcom/vendor-common" />
+  <project path="device/qcom/vendor-common" name="device_qcom_vendor-common" remote="elytra" />
+  <project path="device/qcom/kernelscripts" name="kernel_build" remote="elytra" >
+    <linkfile dest="vendor/qcom/build/tasks/kernel_definitions.mk" src="kernel_definitions.mk"/>
+  </project>
+
+  <!-- External -->
+  <project path="external/AndroidSystemBlur" name="AndroidSystemBlur" remote="elytra" />
+  <remove-project name="platform/external/arm-optimized-routines" />
+  <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="elytra" />
+  <remove-project name="platform/external/e2fsprogs" />
+  <project path="external/e2fsprogs" name="external_e2fsprogs" remote="elytra" />
+  <remove-project name="platform/external/fastrpc" />
+  <project path="external/fastrpc" name="external_fastrpc" remote="elytra" />
+  <remove-project name="platform/external/gptfdisk" />
+  <project path="external/gptfdisk" name="external_gptfdisk" remote="elytra" />
+  <remove-project name="platform/external/libjpeg-turbo" />
+  <project path="external/libjpeg-turbo" name="external_libjpeg-turbo" remote="elytra" />
+  <remove-project name="platform/external/libpng" />
+  <project path="external/libpng" name="external_libpng" remote="elytra" />
+  <remove-project name="platform/external/mksh" />
+  <project path="external/mksh" name="external_mksh" remote="elytra" />
+  <remove-project name="platform/external/sqlite" />
+  <project path="external/sqlite" name="external_sqlite" remote="elytra" />
+  <remove-project name="platform/external/tinycompress" />
+  <project path="external/tinycompress" name="external_tinycompress" remote="elytra" />
+  <remove-project name="platform/external/zlib" />
+  <project path="external/zlib" name="external_zlib" remote="elytra" />
+  
+  <!-- External (AOSP) -->
+  <remove-project name="platform/external/angle" />
+  <project path="external/angle" name="platform/external/angle" remote="aosp" />
+  <project path="external/ComputeLibrary" name="platform/external/ComputeLibrary" remote="aosp"/>
+  <remove-project name="platform/external/dtc" />
+  <project path="external/dtc" name="platform/external/dtc" remote="aosp" />
+  <remove-project name="platform/external/erofs-utils" />
+  <project path="external/erofs-utils" name="platform/external/erofs-utils" remote="aosp" revision="b5bbcb383357b92acb10082878b32bbe831a2137" />
+  <remove-project name="platform/external/ims" />
+  <project path="external/ims" name="platform/external/ims" remote="aosp" />
+  <remove-project name="platform/external/libpalmrejection" />
+  <project path="external/libpalmrejection" name="platform/external/libpalmrejection" remote="aosp" />
+  <remove-project name="platform/external/nos/host/generic" />
+  <project path="external/nos/host/generic" name="platform/external/nos/host/generic" remote="aosp" />
+  <remove-project name="platform/external/noto-fonts" />
+  <project path="external/noto-fonts" name="platform/external/noto-fonts" remote="aosp" />
+  <remove-project name="platform/external/perfetto" />
+  <project path="external/perfetto" name="platform/external/perfetto" remote="aosp" />
+  <remove-project name="platform/external/robolectric-shadows" />
+  <project path="external/robolectric-shadows" name="platform/external/robolectric-shadows" remote="aosp" />
+  <remove-project name="platform/external/rust/crates/pin-utils" />
+  <project path="external/rust/crates/pin-utils" name="platform/external/rust/crates/pin-utils" remote="aosp" />
+  <remove-project name="platform/external/setupcompat" />
+  <project path="external/setupcompat" name="platform/external/setupcompat" remote="aosp" />
+  <remove-project name="platform/external/setupdesign" />
+  <project path="external/setupdesign" name="platform/external/setupdesign" remote="aosp" />
+  
+  <!-- Frameworks -->
+  <remove-project name="platform/frameworks/av" />
+  <project path="frameworks/av" name="frameworks_av" remote="elytra" />
+  <remove-project name="platform/frameworks/base" />
+  <project path="frameworks/base" name="frameworks_base" remote="elytra" />
+  <remove-project name="platform/frameworks/native" />
+  <project path="frameworks/native" name="frameworks_native" remote="elytra" />
+  <remove-project name="platform/frameworks/opt/net/ims" />
+  <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" remote="elytra" />
+  <remove-project name="platform/frameworks/opt/net/wifi" />
+  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="elytra" />
+  <remove-project name="platform/frameworks/opt/telephony" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="elytra" />
+  <remove-project name="platform/frameworks/proto_logging" />
+  <project path="frameworks/proto_logging" name="frameworks_proto_logging" remote="elytra" />
+
+  <!-- Frameworks (AOSP) -->
+  <remove-project name="platform/frameworks/libs/systemui" />
+  <project path="frameworks/libs/systemui" name="platform/frameworks/libs/systemui" remote="aosp" />
+  <remove-project name="platform/frameworks/minikin" />
+  <project path="frameworks/minikin" name="platform/frameworks/minikin" remote="aosp" />
+  <remove-project name="platform/frameworks/opt/car/services" />
+  <project path="frameworks/opt/car/services" name="platform/frameworks/opt/car/services" remote="aosp" />
+
+  <!-- Hardware -->
+  <remove-project name="platform/hardware/interfaces" />
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="elytra" />
+  <remove-project name="platform/hardware/libhardware" />
+  <project path="hardware/libhardware" name="hardware_libhardware" remote="elytra" />
+
+  <!-- Manifest -->
+  <project path="manifest" name="manifest" remote="elytra" />
+
+  <!-- Packages -->
+  <remove-project name="platform/packages/apps/CarrierConfig" />
+  <project path="packages/apps/CarrierConfig" name="packages_apps_CarrierConfig" remote="elytra" />
+  <remove-project name="platform/packages/apps/Launcher3" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="elytra" />
+  <remove-project name="platform/packages/apps/Nfc" />
+  <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="elytra" />
+  <remove-project name="platform/packages/apps/Settings" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="elytra" />
+  <remove-project name="platform/packages/modules/Bluetooth" />
+  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="elytra" />
+  <remove-project name="platform/packages/modules/common" />
+  <project path="packages/modules/common" name="packages_modules_common" remote="elytra" />
+  <remove-project name="platform/packages/modules/Connectivity" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="elytra" />
+  <remove-project name="platform/packages/modules/Wifi" />
+  <project path="packages/modules/Wifi" name="packages_modules_Wifi" remote="elytra" />
+  <remove-project name="platform/packages/providers/TelephonyProvider" />
+  <project path="packages/providers/TelephonyProvider" name="packages_providers_TelephonyProvider" remote="elytra" />
+  <remove-project name="platform/packages/services/Telecomm" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="elytra" />
+
+  <!-- Packages (AOSP) -->
+  <remove-project name="platform/packages/apps/CellBroadcastReceiver" />
+  <project path="packages/apps/CellBroadcastReceiver" name="platform/packages/apps/CellBroadcastReceiver" remote="aosp" />
+  <remove-project name="platform/packages/apps/DocumentsUI" />
+  <project path="packages/apps/DocumentsUI" name="platform/packages/apps/DocumentsUI" remote="aosp" />
+  <remove-project name="platform/packages/apps/EmergencyInfo" />
+  <project path="packages/apps/EmergencyInfo" name="platform/packages/apps/EmergencyInfo" remote="aosp" />
+  <remove-project name="platform/packages/apps/ImsServiceEntitlement" />
+  <project path="packages/apps/ImsServiceEntitlement" name="platform/packages/apps/ImsServiceEntitlement" remote="aosp" />
+  <remove-project name="platform/packages/apps/SettingsIntelligence" />
+  <project path="packages/apps/SettingsIntelligence" name="platform/packages/apps/SettingsIntelligence" remote="aosp" />
+  <remove-project name="platform/packages/apps/SystemUIGo" />
+  <project path="packages/apps/SystemUIGo" name="platform/packages/apps/SystemUIGo" remote="aosp" />
+  <remove-project name="platform/packages/apps/ThemePicker" />
+  <project path="packages/apps/ThemePicker" name="platform/packages/apps/ThemePicker" remote="aosp" />
+  <remove-project name="platform/packages/apps/Traceur" />
+  <project path="packages/apps/Traceur" name="platform/packages/apps/Traceur" remote="aosp" />
+  <remove-project name="platform/packages/apps/WallpaperPicker2" />
+  <project path="packages/apps/WallpaperPicker2" name="platform/packages/apps/WallpaperPicker2" remote="aosp" />
+  <remove-project name="platform/packages/modules/AppSearch" />
+  <project path="packages/modules/AppSearch" name="platform/packages/modules/AppSearch" remote="aosp" />
+  <remove-project name="platform/packages/modules/CellBroadcastService" />
+  <project path="packages/modules/CellBroadcastService" name="platform/packages/modules/CellBroadcastService" remote="aosp" />
+  <project path="packages/modules/IntentResolver" name="platform/packages/modules/IntentResolver" remote="aosp" />
+  <remove-project name="platform/packages/modules/Permission" />
+  <project path="packages/modules/Permission" name="platform/packages/modules/Permission" remote="aosp" />
+  <remove-project name="platform/packages/modules/Uwb" />
+  <project path="packages/modules/Uwb" name="platform/packages/modules/Uwb" remote="aosp" />
+  <remove-project name="platform/packages/modules/Virtualization" />
+  <project path="packages/modules/Virtualization" name="platform/packages/modules/Virtualization" remote="aosp" />
+  <remove-project name="platform/packages/providers/MediaProvider" />
+  <project path="packages/providers/MediaProvider" name="platform/packages/providers/MediaProvider" remote="aosp" />
+  <remove-project name="platform/packages/services/AlternativeNetworkAccess" />
+  <project path="packages/services/AlternativeNetworkAccess" name="platform/packages/services/AlternativeNetworkAccess" remote="aosp" />
+  <remove-project name="platform/packages/services/BuiltInPrintService" />
+  <project path="packages/services/BuiltInPrintService" name="platform/packages/services/BuiltInPrintService" remote="aosp" />
+  <remove-project name="platform/packages/services/Car" />
+  <project path="packages/services/Car" name="platform/packages/services/Car" remote="aosp" />
+  <remove-project name="platform/packages/services/Iwlan" />
+  <project path="packages/services/Iwlan" name="platform/packages/services/Iwlan" remote="aosp" />
+  <remove-project name="platform/packages/services/Mms" />
+  <project path="packages/services/Mms" name="platform/packages/services/Mms" remote="aosp" />
+
+  <!-- Platform Testing (AOSP) -->
+  <remove-project name="platform/platform_testing" />
+  <project path="platform_testing" name="platform/platform_testing" remote="aosp" />
+
+  <!-- Prebuilts -->
+  <project path="prebuilts/extract-tools" name="prebuilts_extract-tools" remote="elytra" />
+
+  <!-- Prebuilts (AOSP) -->
+  <remove-project name="platform/prebuilts/r8" />
+  <project path="prebuilts/r8" name="platform/prebuilts/r8" remote="aosp" clone-depth="1" />
+  <remove-project name="platform/prebuilts/sdk" />
+  <project path="prebuilts/sdk" name="platform/prebuilts/sdk" remote="aosp" clone-depth="1" />
+  <remove-project name="platform/prebuilts/tools" />
+  <project path="prebuilts/tools" name="platform/prebuilts/tools" remote="aosp" clone-depth="1" />
+
+  <!-- System -->
+  <remove-project name="platform/system/connectivity/wificond" />
+  <project path="system/connectivity/wificond" name="system_connectivity_wificond" remote="elytra" />
+  <remove-project name="platform/system/core" />
+  <project path="system/core" name="system_core" remote="elytra" />
+  <remove-project name="platform/system/chre" />
+  <project path="system/chre" name="system_chre" remote="elytra" />
+  <remove-project name="platform/system/keymaster" />
+  <project path="system/keymaster" name="system_keymaster" remote="elytra" />
+  <remove-project name="platform/system/media" />
+  <project path="system/media" name="system_media" remote="elytra" />
+  <remove-project name="platform/system/memory/lmkd" />
+  <project path="system/memory/lmkd" name="system_memory_lmkd" remote="elytra" />
+  <remove-project name="platform/system/netd" />
+  <project path="system/netd" name="system_netd" remote="elytra" />
+  <remove-project name="platform/system/security" />
+  <project path="system/security" name="system_security" remote="elytra" />
+  <remove-project name="platform/system/sepolicy" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="elytra" />
+  <remove-project name="platform/system/update_engine" />
+  <project path="system/update_engine" name="system_update_engine" remote="elytra" />
+  <remove-project name="platform/system/vold" />
+  <project path="system/vold" name="system_vold" remote="elytra" />
+
+  <!-- System (AOSP) -->
+  <remove-project name="platform/system/apex" />
+  <project path="system/apex" name="platform/system/apex" remote="aosp" />
+  <remove-project name="platform/system/bpf" />
+  <project path="system/bpf" name="platform/system/bpf" remote="aosp" />
+  <remove-project name="platform/system/hardware/interfaces" />
+  <project path="system/hardware/interfaces" name="platform/system/hardware/interfaces" remote="aosp" />
+  <remove-project name="platform/system/incremental_delivery" />
+  <project path="system/incremental_delivery" name="platform/system/incremental_delivery" remote="aosp" />
+  <remove-project name="platform/system/libfmq" />
+  <project path="system/libfmq" name="platform/system/libfmq" remote="aosp" />
+  <remove-project name="platform/system/libufdt" />
+  <project path="system/libufdt" name="platform/system/libufdt" remote="aosp" />
+  <remove-project name="platform/system/nfc" />
+  <project path="system/nfc" name="platform/system/nfc" remote="aosp" />
+
+  <!-- Tools -->
+  <project path="tools/extract-utils" name="tools_extract-utils" remote="elytra" />
+
+  <!-- Vendor -->
+  <project path="vendor/elytra" name="vendor_elytra" remote="elytra" />
+  <project path="vendor/elytra/apps/ElytraThemePicker" name="vendor_elytra_apps_ElytraThemePicker" remote="elytra" />
+  
+  <!-- Vendor (AOSPA) -->
+  <project path="vendor/google/gms" name="android_vendor_google_gms" remote="blobs-gitlab" />
+  <project path="vendor/google/pixel" name="android_vendor_google_pixel" remote="blobs" />
+  <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="blobs" />
+  <project path="vendor/qcom/sdclang" name="proprietary_vendor_qcom_sdclang" remote="blobs" revision="disabled" />
+
+  <!-- Vendor (QCOM) -->
+  <remove-project name="platform/vendor/nxp/opensource/packages/apps/Nfc" />
+  <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="vendor_nxp_opensource_packages_apps_Nfc" remote="elytra" />
+  <remove-project name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" />
+  <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="vendor_qcom-opensource_bluetooth-commonsys-intf" remote="elytra" />
+  <remove-project name="platform/vendor/qcom-opensource/display-commonsys-intf" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor_qcom_opensource_commonsys-intf_display" remote="elytra" >
+    <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk" />
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk" />
+  </project>
+  <project path="vendor/qcom/opensource/commonsys-intf/wfd" name="vendor_qcom_opensource_commonsys-intf_wfd" remote="elytra" />
+  <remove-project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="vendor_qcom_opensource_data-ipa-cfg-mgr" remote="elytra" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy" name="vendor_qcom_opensource_data-ipa-cfg-mgr" remote="elytra" revision="tesseract-legacy" />
+  <remove-project name="platform/vendor/qcom-opensource/lights" />
+  <project path="vendor/qcom/opensource/lights" name="vendor_qcom_opensource_lights" remote="elytra" />
+  <remove-project name="platform/vendor/qcom-opensource/power" />
+  <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="elytra" />
+  <remove-project name="platform/vendor/qcom-opensource/packages/apps/Bluetooth" />
+  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="vendor_qcom_opensource_packages_apps_Bluetooth" remote="elytra" />
+  <remove-project name="platform/vendor/qcom-opensource/system/bt" />
+  <project path="vendor/qcom/opensource/commonsys/system/bt" name="vendor_qcom_opensource_commonsys_system_bt" remote="elytra" />
+  <remove-project name="platform/vendor/qcom-opensource/vibrator" />
+  <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" remote="elytra" />
+  <remove-project name="platform/vendor/qcom-opensource/usb" />
+  <project path="vendor/qcom/opensource/usb" name="vendor_qcom_opensource_usb" remote="elytra" />
+
+</manifest>
