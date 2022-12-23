@@ -272,6 +272,8 @@
   <project path="system/connectivity/wificond" name="system_connectivity_wificond" remote="elytra" />
   <remove-project name="platform/system/core" />
   <project path="system/core" name="system_core" remote="elytra" />
+  <remove-project name="platform/system/libhidl" />
+  <project path="system/libhidl" name="system_libhidl" remote="elytra" />
   <remove-project name="platform/system/memory/lmkd" />
   <project path="system/memory/lmkd" name="system_memory_lmkd" remote="elytra" />
   <remove-project name="platform/system/security" />
