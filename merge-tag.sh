@@ -1,5 +1,5 @@
 #!/bin/bash
-# CLO tag merge script for ReloadedOS
+# CLO tag merge script for elytraOS
 # Author: Adithya R (ghostrider-reborn)
 #
 # Usage (from source root):
@@ -11,10 +11,11 @@ grn=$'\e[1;32m'
 blu=$'\e[1;34m'
 end=$'\e[0m'
 
-REMOTE="reloaded"
-BRANCH="t"
+REMOTE="elytra"
+BRANCH="tesseract"
 
-BLACKLIST="device/qcom/common"
+BLACKLIST="device/qcom/common \
+external/zlib"
 
 # verify tag
 if [ -z "$1" ]; then
