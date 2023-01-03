@@ -132,6 +132,7 @@
   <!-- Packages -->
   <remove-project name="platform/packages/apps/CarrierConfig" />
   <project path="packages/apps/CarrierConfig" name="packages_apps_CarrierConfig" remote="elytra" />
+  <project path="packages/apps/Covers" name="packages_apps_Covers" remote="elytra" />
   <remove-project name="platform/packages/apps/Launcher3" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="elytra" />
   <remove-project name="platform/packages/apps/Nfc" />
