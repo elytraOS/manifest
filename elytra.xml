@@ -72,7 +72,11 @@
   <!-- External (AOSP) -->
   <remove-project name="platform/external/angle" />
   <project path="external/angle" name="platform/external/angle" remote="aosp" />
+  <remove-project name="platform/external/boringssl" />
+  <project path="external/boringssl" name="platform/external/boringssl" remote="aosp" />
   <project path="external/ComputeLibrary" name="platform/external/ComputeLibrary" remote="aosp"/>
+  <remove-project name="platform/external/conscrypt" />
+  <project path="external/conscrypt" name="platform/external/conscrypt" remote="aosp" />
   <remove-project name="platform/external/dtc" />
   <project path="external/dtc" name="platform/external/dtc" remote="aosp" />
   <remove-project name="platform/external/erofs-utils" />
@@ -154,6 +158,8 @@
   <project path="packages/providers/TelephonyProvider" name="packages_providers_TelephonyProvider" remote="elytra" />
   <remove-project name="platform/packages/services/Telecomm" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="elytra" />
+  <remove-project name="platform/packages/services/Telephony" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="elytra" />
 
   <!-- Packages (AOSP) -->
   <remove-project name="platform/packages/apps/CellBroadcastReceiver" />
@@ -178,6 +184,7 @@
   <project path="packages/modules/AppSearch" name="platform/packages/modules/AppSearch" remote="aosp" />
   <remove-project name="platform/packages/modules/CellBroadcastService" />
   <project path="packages/modules/CellBroadcastService" name="platform/packages/modules/CellBroadcastService" remote="aosp" />
+  <remove-project name="platform/packages/modules/IntentResolver" />
   <project path="packages/modules/IntentResolver" name="platform/packages/modules/IntentResolver" remote="aosp" />
   <remove-project name="platform/packages/modules/Permission" />
   <project path="packages/modules/Permission" name="platform/packages/modules/Permission" remote="aosp" />
@@ -277,6 +284,8 @@
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk" />
   </project>
   <project path="vendor/qcom/opensource/commonsys-intf/wfd" name="vendor_qcom_opensource_commonsys-intf_wfd" remote="elytra" />
+  <remove-project name="platform/vendor/qcom-opensource/display-commonsys" />
+  <project path="vendor/qcom/opensource/commonsys/display" name="vendor_qcom-opensource_display-commonsys" remote="elytra" />
   <remove-project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" />
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="vendor_qcom_opensource_data-ipa-cfg-mgr" remote="elytra" />
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy" name="vendor_qcom_opensource_data-ipa-cfg-mgr" remote="elytra" revision="tesseract-legacy" />
