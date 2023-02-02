@@ -50,6 +50,8 @@
   <project path="external/AndroidSystemBlur" name="AndroidSystemBlur" remote="elytra" />
   <remove-project name="platform/external/arm-optimized-routines" />
   <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="elytra" />
+  <remove-project name="platform/external/erofs-utils" />
+  <project path="external/erofs-utils" name="platform/external/erofs-utils" remote="aosp" revision="f3669fe94b327235b033c2b6a88a6a28d586cff8" />
   <remove-project name="platform/external/e2fsprogs" />
   <project path="external/e2fsprogs" name="external_e2fsprogs" remote="elytra" />
   <remove-project name="platform/external/fastrpc" />
