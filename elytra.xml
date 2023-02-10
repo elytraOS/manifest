@@ -328,5 +328,7 @@
   <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" remote="elytra" />
   <remove-project name="platform/vendor/qcom-opensource/usb" />
   <project path="vendor/qcom/opensource/usb" name="vendor_qcom_opensource_usb" remote="elytra" />
+  <remove-project name="platform/hardware/qcom/thermal" />
+  <project path="vendor/qcom/opensource/thermal-hal" name="hardware_qcom_thermal" remote="elytra" />
 
 </manifest>
