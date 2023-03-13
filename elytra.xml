@@ -278,6 +278,8 @@
   <project path="system/libhidl" name="system_libhidl" remote="elytra" />
   <remove-project name="platform/system/memory/lmkd" />
   <project path="system/memory/lmkd" name="system_memory_lmkd" remote="elytra" />
+  <remove-project name="platform/system/qcom" />
+  <project path="vendor/qcom/opensource/softap" name="system_qcom" remote="elytra" />
   <remove-project name="platform/system/security" />
   <project path="system/security" name="system_security" remote="elytra" />
   <remove-project name="platform/system/sepolicy" />
@@ -303,6 +305,8 @@
   <project path="vendor/qcom/sdclang" name="proprietary_vendor_qcom_sdclang" remote="blobs" revision="disabled" />
 
   <!-- Vendor (QCOM) -->
+  <remove-project name="platform/vendor/codeaurora/telephony" />
+  <project path="vendor/codeaurora/commonsys/telephony" name="vendor_codeaurora_commonsys_telephony" remote="elytra" />
   <remove-project name="platform/vendor/nxp/opensource/packages/apps/Nfc" />
   <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="vendor_nxp_opensource_packages_apps_Nfc" remote="elytra" />
   <remove-project name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" />
