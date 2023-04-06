@@ -192,6 +192,8 @@
   <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="elytra" />
   <remove-project name="platform/packages/modules/Connectivity" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="elytra" />
+  <remove-project name="platform/packages/modules/common" />
+  <project path="packages/modules/common" name="packages_modules_common" remote="elytra" />
   <remove-project name="platform/packages/modules/Wifi" />
   <project path="packages/modules/Wifi" name="packages_modules_Wifi" remote="elytra" />
   <remove-project name="platform/packages/providers/TelephonyProvider" />
@@ -218,8 +220,6 @@
   <project path="packages/modules/BootPrebuilt/5.4/arm64" name="platform/packages/modules/BootPrebuilt/5.4/arm64" remote="aosp" clone-depth="1" />
   <remove-project name="platform/packages/modules/BootPrebuilt/5.10/arm64" />
   <project path="packages/modules/BootPrebuilt/5.10/arm64" name="platform/packages/modules/BootPrebuilt/5.10/arm64" remote="aosp" clone-depth="1" />
-  <remove-project name="platform/packages/modules/common" />
-  <project path="packages/modules/common" name="platform/packages/modules/common" remote="aosp" />
   <remove-project name="platform/packages/modules/IntentResolver" />
   <project path="packages/modules/IntentResolver" name="platform/packages/modules/IntentResolver" remote="aosp" />
   <remove-project name="platform/packages/modules/Permission" />
