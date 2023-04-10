@@ -178,6 +178,10 @@
   <!-- Manifest -->
   <project path="manifest" name="manifest" remote="elytra" />
 
+  <!-- Packages (Elytra) -->
+  <project path="packages/apps/Elytra/SystemUI" name="packages_apps_Elytra_SystemUI" remote="elytra" />
+  <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="elytra" />
+
   <!-- Packages -->
   <remove-project name="platform/packages/apps/CarrierConfig" />
   <project path="packages/apps/CarrierConfig" name="packages_apps_CarrierConfig" remote="elytra" />
